@@ -3,6 +3,7 @@ from zope import interface
 
 
 class ICaptchaField(interface.Interface):
+
     """ marker interface for CaptchaField
     """
 

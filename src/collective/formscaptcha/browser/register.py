@@ -8,7 +8,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.CMFCore.utils import getToolByName
 
 from plone.app.users.browser.register import RegistrationForm \
-                                                as BaseRegistrationForm
+    as BaseRegistrationForm
 
 
 from zope.interface import Interface
@@ -28,6 +28,7 @@ class ICaptchaSchema(Interface):
 
 
 class RegistrationForm(BaseRegistrationForm):
+
     """ Dynamically get fields from user data, through admin
         config settings.
     """
